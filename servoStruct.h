@@ -5,7 +5,7 @@ struct servoStruct
   int servoNum;
   union
   {
-    struct { int range; bool isntbutton;};
-    struct { bool buttonOn; bool isbutton;};
+    struct {bool isntbutton; double range;};
+    struct {bool isbutton; bool isForward; bool buttonOn;};
   };
 };
